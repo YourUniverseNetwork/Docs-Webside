@@ -1,132 +1,85 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="None">
-  
-  <link rel="canonical" href="https://beta.universenetwork.de/">
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <title>UniverseNetwork v4</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+<html>
+  <head>
+    <title>Server Maintenance UI in HTML/CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <style type="text/css">
+      body{
+      font-family: 'Teko', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0px;
+      }
+      section{
 
-  <link rel="stylesheet" href="css/theme.css" />
-  <link rel="stylesheet" href="css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Home";
-    var mkdocs_page_input_path = "index.md";
-    var mkdocs_page_url = "/";
-  </script>
-  
-  <script src="js/jquery-2.1.1.min.js" defer></script>
-  <script src="js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-</head>
+      text-align: center;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
 
-<body class="wy-body-for-nav" role="document">
-
-
-
-<nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-            <a href="." class="icon icon-home"> UniverseNetwork v4</a>
-            <div role="search">
-                <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-                    <input type="text" name="q" placeholder="Seite suchen" title="Tippe was ein ..." />
-                </form>
-            </div>
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-            <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-
-    <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">UniverseNetwork V4</a>
-    </nav>
-
-
-    <div class="wy-nav-content">
-        <div role="navigation" aria-label="breadcrumbs navigation">
-            <ul class="wy-breadcrumbs">
-                <li><a href=".">Docs</a> &raquo;</li>
-
-
-
-                <li>Home</li>
-                <li class="wy-breadcrumbs-aside">
-
-                </li>
-            </ul>
-
-            <hr/>
-        </div>
-
-        <div role="main">
-            <div class="section">
-
-                <h1 id="welcome-to-mkdocs">Documentation</h1>
-                <ul>
-                </ul>
-                <p>Aktuell befindet sich diese Seite in Wartungen, daher sie gerade noch am renuvieren ist. Wir bitten um Verständnis.</p>
-
-            </div>
-        </div>
-        <footer>
-
-
-
-
-
-
-            <hr/>
-
-            <div role="contentinfo">
-
-            </div>
-
-            UniverseNetwork | 2021
-        </footer>
-
-    </div>
-</section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
+      }
+      h2,p{
+      color: #3867d6;
+      margin: 0px;
+      }
+      h2{
+      font-size: 62px;
+      padding-top: 20px;
+      }
+      p{
+      font-size: 40px;
+      padding-bottom: 20px;
+      }
+      img{
+      max-width: 100%;
+      }
+      a{
+      background: #3867d6;
+      border-radius:4px;
+      outline: none;
+      border: 0px;
+      color: #fff;
+      font-size: 34px;
+      cursor: pointer;
+      text-decoration: none;
+      padding: 5px 25px;
+      }
+      a:hover{
+      background-color: #1d56de;
+      }
+      @media(max-width: 625px){
+      h2{
+      font-size: 50px;
+      }
+      p{
+      font-size: 30px;
     
-    
-    
-    
-  </span>
-</div>
-    <script>var base_url = '.';</script>
-    <script src="js/theme_extra.js" defer></script>
-    <script src="js/theme.js" defer></script>
-      <script src="search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
-
-</body>
+      }
+      }
+      @media(max-width: 492px){
+      h2{
+      font-size: 30px;
+      }
+      a{
+      	font-size: 25px;
+      }
+      p{
+      font-size: 25px;
+        line-height: 26px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <img src="Maintenance.svg">
+      <h2>We build something new for you</h2>
+      <p>Our website will not ne avalible during this time. we will back soon</p>
+      <a href="">Home</a>
+    </section>
+  </body>
 </html>
-
