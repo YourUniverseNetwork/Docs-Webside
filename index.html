@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>UniverseNetwork</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
-    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/89322497?s=40&v=4">
+<head>
+  <title>UniverseNetwork</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/89322497?s=40&v=4">
 
 
 
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="description" content="Wir sind UniverseNetwork, dein Minecraft Netzwerk für Citybuild und Minigames.">
-    <meta property="og:title" content="UniverseNetwork - Dein Minecraft Netzwerk">
-    <meta property="og:site_name" content="UniverseNetwork">
-    <meta property="og:description" content="Wir sind UniverseNetwork.de, dein Minecraft Netzwerk Minigames.">
-    <meta property="og:image" content="https://bybilly.uk/portal/img/minecraft.jpg">
-    <meta property="og:url" content="https://universenetwork.de/">
-    <meta name="twitter:card" content="summary_large_image">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="description" content="Wir sind UniverseNetwork, dein Minecraft Netzwerk für Citybuild und Minigames.">
+  <meta property="og:title" content="UniverseNetwork - Dein Minecraft Netzwerk">
+  <meta property="og:site_name" content="UniverseNetwork">
+  <meta property="og:description" content="Wir sind UniverseNetwork.de, dein Minecraft Netzwerk Minigames.">
+  <meta property="og:image" content="https://bybilly.uk/portal/img/minecraft.jpg">
+  <meta property="og:url" content="https://universenetwork.de/">
+  <meta name="twitter:card" content="summary_large_image">
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
 
-    <style type="text/css">
-      body{
+  <style type="text/css">
+    body{
       font-family: 'Teko', sans-serif;
       background-color: #f2f2f2;
       margin: 0px;
-      }
-      section{
+    }
+    section{
 
       text-align: center;
       height: 100vh;
@@ -38,23 +37,23 @@
       justify-content: center;
       flex-direction: column;
 
-      }
-      h2,p{
+    }
+    h2,p{
       color: #3867d6;
       margin: 0px;
-      }
-      h2{
+    }
+    h2{
       font-size: 62px;
       padding-top: 20px;
-      }
-      p{
+    }
+    p{
       font-size: 40px;
       padding-bottom: 20px;
-      }
-      img{
+    }
+    img{
       max-width: 100%;
-      }
-      a{
+    }
+    a{
       background: #3867d6;
       border-radius:4px;
       outline: none;
@@ -64,39 +63,106 @@
       cursor: pointer;
       text-decoration: none;
       padding: 5px 25px;
-      }
-      a:hover{
+    }
+    a:hover{
       background-color: #1d56de;
-      }
-      @media(max-width: 625px){
+    }
+    @media(max-width: 625px){
       h2{
-      font-size: 50px;
+        font-size: 50px;
       }
       p{
-      font-size: 30px;
-    
+        font-size: 30px;
+
       }
-      }
-      @media(max-width: 492px){
+    }
+    @media(max-width: 492px){
       h2{
-      font-size: 30px;
+        font-size: 30px;
       }
       a{
-      	font-size: 25px;
+        font-size: 25px;
       }
       p{
-      font-size: 25px;
+        font-size: 25px;
         line-height: 26px;
       }
-      }
-    </style>
-  </head>
-  <body>
-    <section>
-      <img src="Maintenance.svg">
-      <h2>Wir gestalten unsere Website neu</h2>
-      <p>Unsere Website wird für diesen Zeitraum nicht erreichbar sein. Wir werden bald wiederkommen.</p>
-      <a href="">Home</a>
-    </section>
-  </body>
-</html>
+    }
+  </style>
+</head>
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+  }
+
+  .alert.success {background-color: #04AA6D;}
+  .alert.info {background-color: #2196F3;}
+  .alert.warning {background-color: #ff9800;}
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+</style>
+</body>
+<body>
+
+<h2>Alert Messages</h2>
+<p>Click on the "x" symbol to close the alert message.</p>
+<div class="alert">
+  <span class="closebtn">&times;</span>
+  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+
+<div class="alert success">
+  <span class="closebtn">&times;</span>
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+<div class="alert info">
+  <span class="closebtn">&times;</span>
+  <strong>Info!</strong> Indicates a neutral informative change or action.
+</div>
+
+<div class="alert warning">
+  <span class="closebtn">&times;</span>
+  <strong>Warning!</strong> Indicates a warning that might need attention.
+</div>
+
+<script>
+  var close = document.getElementsByClassName("closebtn");
+  var i;
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+      var div = this.parentElement;
+      div.style.opacity = "0";
+      setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+  }
+</script>
+<section>
+  <img src="Maintenance.svg">
+  <h2>Wir gestalten unsere Website neu</h2>
+  <p>Unsere Website wird für diesen Zeitraum nicht erreichbar sein. Wir werden bald wiederkommen.</p>
+  <a href="">Home</a>
+</section>
+</body>
